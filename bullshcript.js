@@ -1,7 +1,7 @@
 if(window.isBanter){
 
   async function somerandomStartCrap() {
-    const waitingForUnity = async () => { while (!chatscene.unityLoaded) { await new Promise(resolve => setTimeout(resolve, 500)); } };
+    const waitingForUnity = async () => { while (!BS.BanterScene.GetInstance().unityLoaded) { await new Promise(resolve => setTimeout(resolve, 500)); } };
     await waitingForUnity(); console.log("SCRIPT: Unity-Loaded");
     setTimeout(() => { drawingTools(); }, 1000);
   };
