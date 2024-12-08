@@ -57,7 +57,7 @@ if (window.isBanter) {
         // Set the rotation of the drawing tool (Euler angles)
         drawToolGameObjectTransform.eulerAngles = new BS.Vector3(0, 0, 0);
       }, 500);
-    }, 1000);
+    }, 2000);
   };
 
   // Call the `somerandomStartCrap` function to begin the initialization process
