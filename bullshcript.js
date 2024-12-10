@@ -30,7 +30,7 @@ if (window.isBanter) {
 
     // Add an asset bundle component to the GameObject, using platform-specific URLs
     const kitDrawBundle = await drawToolsObject.AddComponent(
-      new BS.BanterAssetBundle(kitDrawWindows, null, null, kitDrawAndroid)
+      new BS.BanterAssetBundle(kitDrawWindows, null, null, kitDrawAndroid, null, null, false)
     );
 
     // After 1 second, proceed to load and configure the drawing tool item
