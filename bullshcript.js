@@ -26,7 +26,7 @@ if (window.isBanter) {
     const kitDrawAndroid = "https://chat-space.firer.at/DrawTools/kitbundle_android.banter";
 
     // Create a new GameObject to hold the drawing tools
-    const drawToolsObject = await new BS.GameObject("MyDrawTools");
+    const drawToolsObject = await new BS.GameObject("MyDrawTools").Async();
 
     // Add an asset bundle component to the GameObject, using platform-specific URLs
     const kitDrawBundle = await drawToolsObject.AddComponent(
@@ -39,7 +39,7 @@ if (window.isBanter) {
       const drawToolItemPath = "assets/_prefabs/drawgadget/drawtool.prefab";
 
       // Create a new GameObject for the drawing tool item
-      const drawToolGameObject = await new BS.GameObject("MyKitItem");
+      const drawToolGameObject = await new BS.GameObject("MyKitItem").Async();
 
       // Add the prefab component to the drawing tool GameObject
       const drawToolItem = await drawToolGameObject.AddComponent(
